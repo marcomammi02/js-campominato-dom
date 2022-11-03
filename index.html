@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minefield</title>
+
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <!-- main js -->
+    <script src="script.js" defer></script>
+
+
+    <!-- main style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-title">
+                <img src="img/logo-boolean.jpg" alt="">
+                <h1>Minefield &#128163;</h1>
+            </div>
+            <div class="controls">
+                <label for="Level">Select level:</label>
+                <select name="Level" id="level-selector">
+                    <option value="">---</option>
+                    <option value="100">Easy</option>
+                    <option value="81">Medium</option>
+                    <option value="49">Hard</option>
+                </select>
+                <button class="btn-play">Play!</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="notices">
+            <h2 class="start-title">Welcome to Minefield, select a level and click "Play!" to start...</h2>
+            <h2 class="level-notice hidden">Please select a "Level" difficulty...</h2>
+        </div>
+        <div class="table hidden"></div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Made with &#9829; by <a href="https://boolean.careers">Boolean</a></p>
+        </div>
+    </footer>
+</body>
+</html>
