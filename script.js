@@ -3,12 +3,14 @@ const eleLevelSelector = document.querySelector('#level-selector');
 const eleTable = document.querySelector('.table');
 const eleStartTitle = document.querySelector('.start-title');
 const eleLevelNotice = document.querySelector('.level-notice');
+const eleEndGamePanel = document.querySelector('.end-game-panel');
 let arrBombs;
 let eleCell;
 let score = 0;
 
 eleBtnPlay.addEventListener('click', function() {
     eleStartTitle.classList.add('hidden');
+    eleEndGamePanel.classList.add('hidden');
     
     if (eleLevelSelector.value == '') {
         eleLevelNotice.classList.remove('hidden');
@@ -57,12 +59,10 @@ function toggleCell() {
                 allCells[i].classList.add('bomb');
             }
         }
-        const eleEndGamePanel = document.querySelector('.end-game-panel');
         eleEndGamePanel.classList.remove('hidden');
     } else {
         this.classList.toggle('active');
         score += 1;
-        console.log(score)
         const eleScoreEndGame = document.querySelector('.score');
         eleScoreEndGame.innerHTML = score;
     }
