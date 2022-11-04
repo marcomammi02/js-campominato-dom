@@ -11,6 +11,7 @@ let score = 0;
 eleBtnPlay.addEventListener('click', function() {
     eleStartTitle.classList.add('hidden');
     eleEndGamePanel.classList.add('hidden');
+    score = 0;
     
     if (eleLevelSelector.value == '') {
         eleLevelNotice.classList.remove('hidden');
